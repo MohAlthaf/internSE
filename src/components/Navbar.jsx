@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Icon } from "@iconify/react";
 import logo from "../assets/images/logo.png"
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -31,9 +32,9 @@ const Navbar = () => {
             <img src={logo} alt="" className="md:w-28 w-24 md:block text-2xl md:text-3xl font-black text-main-color mr-2"/>
             <ul className="hidden md:flex space-x-4">
               <li className="p-4 hover:text-main-color">
-                <a href="features">Features</a>
+                <a href="#features">Features</a>
               </li>
-              <li className="p-4 hover:text-main-color">Pricing</li>
+              <li className="p-4 hover:text-main-color"><a href="#pricing">Pricing</a></li>
               <li className="p-4 hover:text-main-color">Templates</li>
               <li className="p-4 hover:text-main-color">Resources</li>
             </ul>

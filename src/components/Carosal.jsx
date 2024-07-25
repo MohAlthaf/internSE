@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import img1 from "../assets/images/Feasto website resources 1.png"; // Adjust the path if necessary
 import logo from "../assets/images/logo.png";
 import ".././index.css";
 const logos = [
@@ -26,7 +25,6 @@ const Carousel = () => {
 
   return (
     <div className="relative font-inter antialiased flex flex-col justify-center h-32">
-      {/* Adjust height here */}
       <div className="w-full max-w-8xl mx-auto px-4 md:px-6 py-12 sm:py-24">
         <div className="text-center">
           <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
@@ -41,7 +39,6 @@ const Carousel = () => {
                     alt={logo.alt}
                     className="w-28 sm:w-32 md:w-40 lg:w-48 xl:w-64 no-max-width"
                   />{" "}
-                 
                 </li>
               ))}
             </ul>

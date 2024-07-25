@@ -3,19 +3,16 @@ import Vector from "../assets/images/Vector.png";
 import mobile1 from "../assets/images/Feasto website resources 1.png";
 import mobile2 from "../assets/images/Feasto website resources2.png";
 import img1 from "../assets/images/Image - 1.png";
-import img2 from "../assets/images/Image - 4.png";
-import img3 from "../assets/images/Image - 3.png";
-import img4 from "../assets/images/Image - 2.png";
 import deliveryMan from "../assets/images/deliveryMan.jpg";
 import restaurantAndBusiness from "../assets/images/restaurant-business.jpeg";
 import groceryImg from "../assets/images/Image.png";
 import retailStoreImg from "../assets/images/retailStore.jpeg";
 import customergrowth from "../assets/images/customergrowth.jpeg";
+import BusinessGrow from "../assets/images/businessGrow4.jpeg";
 import { Icon } from "@iconify/react";
 import rocketLaunchOutline from "@iconify-icons/material-symbols/rocket-launch-outline-rounded";
 import Card from "./Card";
 import Accordion from "./Accordion";
-import FeastoFeature from "./FeastoFeature";
 import Carosal from "./Carosal";
 
 const LandingPage = () => {
@@ -27,7 +24,6 @@ const LandingPage = () => {
 
   return (
     <>
-      {/* <FeastoFeature/> */}
       {/* landing page */}
       <div className="flex flex-col items-center justify-center text-center py-16">
         <p className="text-red-600 md:font-medium md:text-lg mb-4 text-sm">
@@ -93,7 +89,7 @@ const LandingPage = () => {
       {/* multiple images part */}
       <div className="flex flex-cols-2 md:flex-cols-2 px-4 md:px-20 flex-wrap">
         <div className="w-full md:w-1/2 flex justify-center items-center relative">
-          <div className=" relative h-[700px] bg-red-500">
+          <div className=" relative md:h-[800px]  h-[500px]">
             <img
               src={img1}
               alt=""
@@ -121,34 +117,28 @@ const LandingPage = () => {
             <img
               src={deliveryMan}
               alt=""
-              className="relative md:w-[349px] w-[190px] rounded bottom-40"
+              className="relative md:w-[349px] w-[190px] rounded-lg bottom-28 right-6 md:right-0 md:bottom-36"
               style={{ marginLeft: "auto" }}
             />
             <img
               src={customergrowth}
               alt=""
-              className="relative w-[335px] h-[230px] rounded-lg"
+              className="relative md:w-[335px] w-[200px] h-[135px] md:h-[230px] rounded-lg bottom-40 md:bottom-64 "
               style={{
-                top: "-20rem",
                 marginLeft: "auto",
                 marginRight: "16rem",
               }}
             />
             <img
-              src={img4}
+              src={BusinessGrow}
               alt=""
-              className="relative w-[321px]   border-b-1 border-black"
+              className="relative md:w-[321px] w-[180px] md:h-[367px] h-[215px] border-b-1 border-black object-cover rounded-lg mr-8 md:bottom-96 bottom-64"
               style={{
-                top: "-30rem",
-
-                // marginBottom: "auto",
-                border: "1px solid black",
-
                 marginLeft: "auto",
               }}
             />
 
-            <div className="absolute top-[485px] left-36 bg-white p-2 rounded-lg drop-shadow">
+            <div className="absolute md:top-[485px] top-[300px] left-36 bg-white p-2 rounded-lg drop-shadow">
               <div className="flex flex-row items-center">
                 <div className="mr-2 bg-yellow-100 rounded-lg p-1">
                   <Icon
@@ -164,7 +154,7 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute top-[240px] right-0 bg-white p-2 rounded-lg drop-shadow">
+            <div className="absolute top-[180px] right-0 bg-white p-2 rounded-lg drop-shadow">
               <div className="flex flex-row items-center">
                 <div className="mr-2 bg-green-100 rounded-lg p-1">
                   <Icon
@@ -193,10 +183,6 @@ const LandingPage = () => {
             </h1>
             <div className="mt-8 px-5">
               <div className=" items-start mb-6">
-                {/* <div className="flex  p-2 rounded-full mr-4">
-                            <Icon icon={rocketLaunchOutline} className="w-8 h-8 mx-4 text-main-color" />
-                            <h3 className="font-bold text-lg ">Launch your store in 3 mins</h3>
-                        </div> */}
                 <div className="flex items-center justify-start  mr-4 mb-2">
                   <Icon
                     icon={rocketLaunchOutline}
@@ -279,41 +265,7 @@ const LandingPage = () => {
         </div>
       </div>
 
-      {/* <div className="flex flex-cols-2 md:flex-cols-2 divide-x px-4 md:px-20 flex-wrap">
-  <div className="w-1/2 flex justify-center items-center relative">
-    <div className="bg-gray-500 relative flex flex-wrap justify-center items-center">
-      <img src={img1} alt="" className="relative w-[243px]" style={{ right: "-96px" }} />
-      <div className="relative flex flex-col items-center">
-        <img src={img2} alt="" className="relative w-[335px]" style={{ top: "-10rem", marginLeft: "auto", marginRight: "16rem" }} />
-        <img src={img3} alt="" className="relative w-[349px]" style={{ bottom: "18rem" ,marginLeft: "auto"}} />
-        <img src={img4} alt="" className="relative w-[321px] border-b-1 border-black" style={{ top: "-27rem", left: "220px", border: "1px solid black" }} />
-      </div>
-    </div>
-  </div>
-  <div className="w-1/2">sdf</div>
-</div> */}
-
-      {/* <div className="flex h-screen">
-      <div className="w-1/2 bg-blue-500 p-4">
-        <h1 className="text-white">Left Side</h1>
-        <p className="text-white">Content for the left side of the page.</p>
-      </div>
-      <div className="w-1/2 bg-green-500 p-4">
-        <h1 className="text-white">Right Side</h1>
-        <p className="text-white">Content for the right side of the page.</p>
-      </div>
-    </div> */}
-
-      <div className="grid grid-cols-1 md:grid-cols-2 px-6 md:px-24">
-        {/* <div className="bg-gray-500 relative mx-auto">
-        <div className=" justify-center items-center">
-            <img src={img1} alt="" className="relative w-[243px] right-[-96px]" />
-            <img src={img2} alt="" className="relative w-[335px]" style={{ top: '-10rem', right: '-16rem' }} />
-            <img src={img3} alt="" className="relative w-[349px]" style={{ top: '-18rem' }} />
-            <img src={img4} alt="" className="relative w-[321px] border-black left-[220px]" style={{ top: '-27rem', border: '1px solid black' }} />
-        </div>
-        </div> */}
-      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 px-6 md:px-24"></div>
 
       <div className="px-6 md:px-24 pb-12">
         <div className="">
